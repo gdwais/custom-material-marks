@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Typography, Box, Slider } from "@mui/material";
-import { Mark } from "./types";
-import useStyles from "./styles";
+import { Mark } from "../types";
+import useStyles from "../styles";
 
 export const BasicSliderWithMarks = () => {
   const classes = useStyles();
@@ -34,7 +34,6 @@ export const BasicSliderWithMarks = () => {
       <Box className={classes.sliderContainer}>
         <Typography className={classes.sliderValue}>{sliderValue}</Typography>
         <Slider
-          className="mt-1"
           min={0}
           max={100}
           value={sliderValue}

@@ -1,10 +1,12 @@
-import React, { useState } from "react";
-
 import "./App.css";
-import { Box, Typography, Slider } from "@mui/material";
+import { Box } from "@mui/material";
 import useStyles from "./styles";
-import { BasicSlider } from "./BasicSlider";
-import { BasicSliderWithMarks } from "./BasicSliderWithMarks";
+import {
+  BasicSlider,
+  BasicSliderWithMarks,
+  SliderWithInputSource,
+  SliderWithCustomMarks,
+} from "./components";
 
 function App() {
   const classes = useStyles();
@@ -12,6 +14,8 @@ function App() {
     <Box className={classes.appContainer}>
       <BasicSlider />
       <BasicSliderWithMarks />
+      <SliderWithInputSource />
+      <SliderWithCustomMarks />
     </Box>
   );
 }

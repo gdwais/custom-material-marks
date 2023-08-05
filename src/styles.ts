@@ -7,11 +7,13 @@ const styles = () => {
       width: 500,
       margin: "auto",
     },
-    container: {
-      marginTop: 100,
-    },
+    container: {},
     appHeader: {},
-    sliderContainer: {},
+    sliderContainer: {
+      marginTop: 40,
+      marginBottom: 40,
+      borderRadius: 8,
+    },
     sliderValue: {},
   };
 };
